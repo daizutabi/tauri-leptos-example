@@ -8,7 +8,7 @@ mod common;
 wasm_bindgen_test_configure!(run_in_browser);
 
 #[wasm_bindgen_test]
-async fn increment_counter() {
+async fn increment() {
     open_counter();
     common::click_text("+1");
     common::click_text("+1");
