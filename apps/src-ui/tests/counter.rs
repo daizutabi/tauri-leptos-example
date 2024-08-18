@@ -8,7 +8,7 @@ mod common;
 wasm_bindgen_test_configure!(run_in_browser);
 
 #[wasm_bindgen_test]
-async fn increment_counter() {
+async fn increment() {
     open_counter();
     common::click_text("+1");
     common::click_text("+1");
@@ -37,7 +37,9 @@ async fn clear() {
 }
 
 fn open_counter() {
-    common::remove_top_div();
+    if let Some(top_div) = document().query_selector("body div").unwrap() {
+        top_div.remove();
+    }
     mount_to_body(move || view! { <SimpleCounter initial_value=10 step=1 /> });
 }
 
