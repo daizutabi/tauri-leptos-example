@@ -1,14 +1,9 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+use app::App;
+use leptos::prelude::*;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+mod app;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub fn run() {
+    console_error_panic_hook::set_once();
+    mount_to_body(App)
 }
