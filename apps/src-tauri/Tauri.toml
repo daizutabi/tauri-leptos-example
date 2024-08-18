@@ -16,6 +16,6 @@ icon = ["icons/icon.ico"]
 with-global-tauri = true
 
 [[app.windows]]
-title = "MyApp"
+title = "Tauri Leptos Example"
 width = 800
 height = 600
