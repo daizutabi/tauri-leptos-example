@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = ["apps/src-tauri", "apps/src-ui"]
+
+[profile.release]
+codegen-units = 1
+lto = true
+
+[workspace.package]
+edition = "2021"
+
+[workspace.dependencies]

@@ -1,0 +1,21 @@
+product-name = "tauri-leptos-example"
+version = "0.1.0"
+identifier = "com.tauri-leptos-example.dev" # 適当です。
+
+[build]
+dev-url = "http://localhost:1420"
+before-dev-command = { cwd = "../src-ui", script = "trunk serve" }
+before-build-command = { cwd = "../src-ui", script = "trunk build" }
+frontend-dist = "../src-ui/dist"
+
+[bundle]
+active = true
+icon = ["icons/icon.ico"]
+
+[app]
+with-global-tauri = true
+
+[[app.windows]]
+title = "Tauri Leptos Example"
+width = 800
+height = 600
