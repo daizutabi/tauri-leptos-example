@@ -37,7 +37,9 @@ async fn clear() {
 }
 
 fn open_counter() {
-    common::remove_top_div();
+    if let Some(top_div) = document().query_selector("body div").unwrap() {
+        top_div.remove();
+    }
     mount_to_body(move || view! { <SimpleCounter initial_value=10 step=1 /> });
 }
 
