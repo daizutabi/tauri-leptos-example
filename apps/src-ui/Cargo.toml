@@ -10,6 +10,7 @@ name = "src_ui_lib"
 console_error_panic_hook = "0.1.7"
 console_log = "1.0"
 futures = "0.3.30"
+icondata = "0.4.0"
 leptos = { version = "0.7.0-gamma", features = ["csr"] }
 log = "0.4.22"
 serde = { version = "1", features = ["derive"] }
@@ -29,5 +30,5 @@ wasm-bindgen = "0.2.93"
 wasm-bindgen-test = "0.3.43"
 
 [dev-dependencies.web-sys]
-features = ["HtmlElement", "XPathResult"]
 version = "0.3.70"
+features = ["HtmlElement", "XPathResult"]
