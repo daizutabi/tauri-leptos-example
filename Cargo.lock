@@ -3638,7 +3638,7 @@ dependencies = [
 
 [[package]]
 name = "src-tauri"
-version = "0.3.3"
+version = "0.4.0"
 dependencies = [
  "serde",
  "serde_json",
@@ -3649,10 +3649,11 @@ dependencies = [
 
 [[package]]
 name = "src-ui"
-version = "0.3.3"
+version = "0.4.0"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
+ "futures",
  "leptos",
  "log",
  "serde",

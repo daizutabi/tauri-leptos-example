@@ -1,5 +1,5 @@
 product-name = "tauri-leptos-example"
-version = "0.3.3"
+version = "0.4.0"
 identifier = "com.tauri-leptos-example.dev" # 適当です。
 
 [build]
