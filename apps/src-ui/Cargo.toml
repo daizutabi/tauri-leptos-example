@@ -8,12 +8,11 @@ name = "src_ui_lib"
 
 [dependencies]
 console_error_panic_hook = "0.1.7"
-leptos = { version = "0.7.0-gamma", features = ["csr"] }
-# thaw = { version = "0.4.0-beta3" }
-
-log = "0.4.22"
 console_log = "1.0"
+leptos = { version = "0.7.0-gamma2", features = ["csr"] }
+log = "0.4.22"
 serde = { version = "1", features = ["derive"] }
+# thaw = { version = "0.4.0-beta3" }
 
 [dependencies.thaw]
 git = "https://github.com/thaw-ui/thaw"
