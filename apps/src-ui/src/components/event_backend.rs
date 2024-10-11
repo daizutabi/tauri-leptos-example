@@ -9,12 +9,12 @@ pub fn EventBackend() -> impl IntoView {
 
     let trigger_backend_event = move |_| {
         disabled.set(true);
-        leptos::spawn::spawn_local(async move {
+        leptos::task::spawn_local(async move {
             tauri_sys::core::invoke::<()>("trigger_backend_event", ()).await;
         });
     };
 
-    leptos::spawn::spawn_local(async move {
+    leptos::task::spawn_local(async move {
         let mut listener = tauri_sys::event::listen::<Option<i32>>("backend")
             .await
             .unwrap();

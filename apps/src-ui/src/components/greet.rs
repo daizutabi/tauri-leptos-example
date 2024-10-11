@@ -13,7 +13,7 @@ pub fn Greet() -> impl IntoView {
     let greet_msg = RwSignal::new(String::new());
 
     let on_click = move |_| {
-        leptos::spawn::spawn_local(async move {
+        leptos::task::spawn_local(async move {
             let name = name.get_untracked();
             log::info!("invoke: {name}");
             let args = GreetArgs { name };
