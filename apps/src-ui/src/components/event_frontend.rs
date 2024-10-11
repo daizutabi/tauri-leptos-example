@@ -7,13 +7,13 @@ pub fn EventFrontend() -> impl IntoView {
     let count = RwSignal::new(0);
 
     let emit_frontend_event = move |_| {
-        leptos::spawn::spawn_local(async move {
+        leptos::task::spawn_local(async move {
             let n = count.get_untracked();
             tauri_sys::event::emit("frontend", &n).await.unwrap();
         });
     };
 
-    leptos::spawn::spawn_local(async move {
+    leptos::task::spawn_local(async move {
         let mut listener = tauri_sys::event::listen::<i32>("frontend")
             .await
             .unwrap();

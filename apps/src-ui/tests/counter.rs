@@ -1,4 +1,4 @@
-use leptos::{prelude::*, spawn::tick};
+use leptos::{prelude::*, task::tick};
 use wasm_bindgen_test::*;
 
 use src_ui_lib::components::counter::SimpleCounter;
