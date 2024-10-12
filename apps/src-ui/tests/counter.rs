@@ -1,7 +1,7 @@
 use leptos::{prelude::*, task::tick};
 use wasm_bindgen_test::*;
 
-use src_ui_lib::components::counter::SimpleCounter;
+use src_ui::components::counter::SimpleCounter;
 
 mod common;
 
