@@ -1,6 +1,6 @@
 product-name = "tauri-leptos-example"
-version = "0.4.3"
-identifier = "com.tauri-leptos-example.dev" # 適当です。
+version = "0.4.4"
+identifier = "com.tauri-leptos-example.dev"
 
 [build]
 dev-url = "http://localhost:1420"
