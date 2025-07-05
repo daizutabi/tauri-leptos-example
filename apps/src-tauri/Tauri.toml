@@ -1,9 +1,9 @@
 product-name = "tauri-leptos-example"
-version = "0.3.8"
+version = "0.3.9"
 identifier = "com.tauri-leptos-example.dev"
 
 [build]
-dev-url = "http://localhost:1420"
+dev-url = "http://127.0.0.1:8080"
 before-dev-command = { cwd = "../src-ui", script = "trunk serve" }
 before-build-command = { cwd = "../src-ui", script = "trunk build" }
 frontend-dist = "../src-ui/dist"
